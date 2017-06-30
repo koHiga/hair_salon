@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/* default settings start */
+header, nav, article, aside, footer, #sns {
+	display: block;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica, "ヒラギノ角ゴシック", sans-serif, "メイリオ";
+	color: #fafbf1;
+	/*border: 1px dotted gray;*/
+}
+
+body {
+	margin: 20px auto;
+	width: 970px;
+	height: 640px;
+	background-color: #330066;
+}
+
+header {
+	width: 100%;
+	height: 64px;
+}
+#header-left {
+	float: left;
+}
+#header-left a {
+	text-decoration: none;
+	font-family: Krungthep, Verdana;
+	font-size: 48px;
+	color: #feffc1;
+	width: 370px;
+	padding-left: 5px;
+}
+#header-right {
+	float: right;
+}
+#header-right ul, #search {
+		display: inline-block;
+		margin-top: 30px;
+}
+#header-right li {
+	list-style-type: none;
+	display: inline-block;
+	font-size: 85%;
+	padding-left: 10px;
+}
+#header-right li a {
+	text-decoration: none;
+	color: #feffc1;
+}
+#header-right li a:hover {
+	text-decoration: underline;
+	color: #cc9900;
+}
+#search {
+		margin-left: 10px;
+}
+#search label {
+	font-size: 85%;
+	color: #feffc1;
+}
+#search input {
+	color: #000;
+}
+
+#mainnavi {
+	clear: both;
+	height: 24px;
+	text-align: center;
+	background: linear-gradient(#ffffcc, #330066);
+}
+#mainnavi ul, #mainnavi li {
+	list-style-type: none;
+	display: inline;
+	font-size: 24px;
+	margin: 45px;
+}
+#mainnavi li a {
+	text-decoration: none;
+	color: #250053;
+}
+#mainnavi li a:hover {
+	text-decoration: overline;
+	color: white;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #330844;
+	border-top: 1px solid #13001a;
+	opacity: 0.9;
+	position: relative;
+}
+.footer_heading {
+	display: inline-block;
+	margin-top: 5px;
+	list-style-type: none;
+	width: 155px;
+	padding-left: 5px;
+}
+footer p {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 80%;
+	opacity: 0.8;
+}
+
+.footer_li_head {
+		font-weight: bold;
+}
+.footer_heading a {
+	text-decoration: none;
+	font-size: 95%;
+	color: #999999;
+}
+.footer_heading a:hover {
+	text-decoration: underline;
+	color: #ffead8;
+}
+footer li {
+	padding-left: 15px;
+	text-align: left;
+	font-size: 85%;
+}
+
+#to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}	
+#to_top a {
+    background: #feffc1;
+    text-decoration: none;
+    font-size: 60% bold;
+    color: #1a1a1a;
+    width: 30px;
+    padding: 5px 0;
+    text-align: center;
+	box-shadow: 3.5px 3.5px 6px 5px rgba(0,0,0,0.3) inset;
+    display: block;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+#to_top a:hover {
+    text-decoration: none;
+    background: #a5a674;
+}
+/* default settings end */
+
+/* css for index start*/
+#news {
+	margin: 40px 0px;
+	width: 600px;
+	height: 400px;
+	background-color: #000000;
+	float: left;
+}
+#news h1, #news p {
+	font-family: Georgia, Times New Roman, "MS明朝", "ヒラギノ明朝";
+	margin-left: 5px;
+}
+#news a {
+	display: block;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 85%;
+}
+
+#sns {
+	margin: 40px 0px;
+	width: 350px;
+	height: 400px;
+	float: right;
+}
+.twitter-timeline {
+		width: 350px;
+		height: 400px;
+}
+
+#runway_index {
+	clear: both;
+}
+
+.runway {
+	display: inline-block;
+	margin: 10px 10px 80px 10px;
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+}
+.runway h2 {
+	position: absolute; top: 20px; left: 10px; width: 30px;
+	color: #ffffff;
+}
+.runway h3 {
+	position: absolute; top:160px; left:200px; width:90px;
+	z-index: 2;
+	-webkit-transition: .3s;
+	transition: .3s;
+	text-align: right;
+	color: #f5ae14;
+	opacity: 0;
+}
+.runway:hover h3 {
+	opacity: 1;
+}
+
+.bannar_pic {
+	width: 400px;
+}
+#bannar1 {
+	float: left;
+	margin: 30px 0px 50px 5px;
+}
+#bannar2 {
+	float: right;
+	margin: 30px 5px 50px 0px;
+}
+/* css for index end */
+
+/* css for cut_menu start */
+#cut_menu h2, #cut_menu h3 {
+	margin: 30px 0px 0px 40px;
+	font-family:"Lucida Console";
+	color: #fdffe7;
+}
+.cut_menu {
+	display: block;
+	background-color: #000000;
+	border-radius: 20px;
+	width: 500px;
+	margin: 10px 0px 30px 10px;
+}
+.cut_menu th {
+	font-size: 95%;
+	color: #fdffe7;
+	text-align: left;
+	padding-left: 15px;
+	float: left;
+	width: 270px;
+}
+.cut_menu td {
+	color: #fdffe7;
+	text-align: right;
+	float: right;
+	width: 185px;
+}
